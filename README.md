@@ -14,7 +14,7 @@ go run chXX/exN/main.go
 
 ## Why does this repository have tags?
 
-The tags correspond to the versioning exercises in chapter 11.
+The tags are related to the versioning exercises in chapter 11.
 
 ## License
 
