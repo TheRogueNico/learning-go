@@ -1,4 +1,4 @@
-module github.com/aeonAvis/learning-go/ch10/v2
+module github.com/TheRogueNico/learning-go/ch10/v2
 
 go 1.25.0
 
