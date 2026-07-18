@@ -14,10 +14,12 @@ go run chXX/exN/main.go
 
 ## Why does this repository have tags?
 
-The tags are related to the versioning exercises in chapter 11.
+The tags are related to the versioning exercises in chapter 10.
 
 ## License
 
-This is an educational repository, released under the [MIT license](LICENSE).
+This is an educational repository.
+
+My personal solutions are under the [MIT license](LICENSE).
 
 All exercises originate from *Learning Go, 2nd Edition* by Jon Bodner. The book's official repository is [learning-go-book-2e](https://github.com/learning-go-book-2e).
