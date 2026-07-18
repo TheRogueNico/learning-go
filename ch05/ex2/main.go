@@ -20,7 +20,7 @@ func fileLen(filename string) (int, error) {
 		length += count
 		if err != nil {
 			if err != io.EOF {
-				fmt.Println(err)
+				return 0, err
 			}
 			break
 		}
