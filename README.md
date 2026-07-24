@@ -2,7 +2,7 @@
 
 Personal solutions to exercises from [*Learning Go, 2nd Edition*](https://www.oreilly.com/library/view/learning-go-2nd/9781098139285/) by Jon Bodner.
 
-Each chapter lives in its own directory (`chXX`), with each exercise as a standalone `exN/main.go`. Exercise descriptions are documented in a `README.md` within each chapter.
+Each chapter lives in its own directory (`chXX`), with each exercise as a standalone `exN/main.go`. Exercise questions are inside a `README.md` within each chapter.
 
 ## Running an exercise
 
