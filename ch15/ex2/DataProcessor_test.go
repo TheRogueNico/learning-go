@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"strings"
+	"sync"
 	"testing"
 )
 
@@ -127,4 +128,18 @@ func TestNewController(t *testing.T) {
 			}
 		})
 	}
+}
+
+func TestNewController_Concurrent(t *testing.T) {
+	handler := NewController(make(chan []byte, 1000))
+
+	var wg sync.WaitGroup
+	for range 50 {
+		wg.Go(func() {
+			req := httptest.NewRequest(http.MethodPost, "/", strings.NewReader("id\n+\n1\n2"))
+			rec := httptest.NewRecorder()
+			handler.ServeHTTP(rec, req)
+		})
+	}
+	wg.Wait()
 }
